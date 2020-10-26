@@ -10,7 +10,9 @@ BUTTON_LOGIN_GOOGLE = getEnv("BUTTON_LOGIN_GOOGLE")
 INPUT_GOOGLE_EMAIL = getEnv("INPUT_GOOGLE_EMAIL")
 INPUT_GOOGLE_PASSWORD = getEnv("INPUT_GOOGLE_PASSWORD")
 
+
 def navigateToLogin(driver):
+    print("as")
     driver.get(URL_LOGIN)
 
 

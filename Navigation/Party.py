@@ -3,7 +3,7 @@ import time
 
 from Utils import getValue, getEnv
 
-ID_PARTY = getEnv("ID_PARTY")
+ID_PARTY = "282665"
 LINK_PARTY = getEnv("LINK_PARTY")
 SCRIPT_CLICK_BUTTON_BLUE = getEnv("SCRIPT_CLICK_BUTTON_BLUE")
 

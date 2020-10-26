@@ -1,13 +1,13 @@
 import json
+import os
 import chromedriver_autoinstaller
 from selenium import webdriver
-from Utils import getProjectFolder
 from Navigation import navigateToLogin, loginButton, formLoginGoogle, payUser, goToPartyPage, getUsers
 
 
 def startSession():
     print("PROGRAMA INICIADO")
-    chromedriver_autoinstaller.install()
+    chromedriver_autoinstaller.install(cwd=True)
     webBrowser = webdriver.Chrome()
     global browserDriver
     browserDriver = webBrowser
@@ -19,7 +19,7 @@ def getSessionId():
 
 
 def getCredentials():
-    with open(getProjectFolder() + "\\values.json") as file:
+    with open(os.getcwd() + "\\values.json", "r") as file:
         data = json.load(file)
         email = data['email']
         password = data['password']

@@ -7,7 +7,7 @@ from Utils import getProjectFolder
 def startSession():
     print("PROGRAMA INICIADO")
 
-    pathProject = getProjectFolder()
+    """pathProject = getProjectFolder()"""
     # browser = "chromedriver.exe"
     # fullRoute = getProjectFolder() + "\\" + browser
     chromedriver_autoinstaller.install()
